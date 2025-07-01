@@ -11,12 +11,20 @@ class ThemeProvider extends ChangeNotifier {
   // check if current theme is equal to dark mode
   bool get isDarkMode => _themeData == darkMode;
 
-  set themeDate(ThemeData themeData) {
+  set themeData(ThemeData themeData) {
     _themeData = themeData;
   }
 
   @override
   void notifyListeners() {
     super.notifyListeners();
+  }
+
+  void toggleTheme() {
+    if (_themeData == lightMode) {
+      themeData = darkMode;
+    } else {
+      themeData = lightMode;
+    }
   }
 }
