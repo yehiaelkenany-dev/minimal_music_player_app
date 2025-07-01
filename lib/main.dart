@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:minimal_music_player_app/pages/home_page.dart';
 import 'package:minimal_music_player_app/theme/dark_mode.dart';
+import 'package:minimal_music_player_app/theme/light_mode.dart';
 
 void main() {
   runApp(const MyApp());
